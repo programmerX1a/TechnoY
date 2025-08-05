@@ -1,0 +1,5 @@
+Flask
+zxcvbn
+Werkzeug
+Flask-Session
+Flask-Login
