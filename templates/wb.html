@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='wb.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+<div class="containerz">
+
+    <div class="navz">
+        <div class="icon">
+           <a href="/"> <img src="{{ url_for('static', filename='images/TechnoY.png') }}"></a>
+        </div>
+        <div class="sectionz">
+            <div class="boxz">
+                <ul>
+                   <li><a href="#">Courses <span>></span></a></li>
+                </ul>
+
+                <div class="card">
+                    <ul>
+                        <li>
+                            <a href="/sw">Solid Works</a>
+                            <img src="{{ url_for('static', filename='images/SolidWorks.png') }}">
+                            <p>Learn how to design mechanical/machine parts</p>
+                        </li>
+                        <li>
+                            <a href="/cpp">C++</a>
+                            <img src="{{ url_for('static', filename='images/C++.png') }}">
+                            <p>Discover the best language for operating electronic components</p>
+                        </li>
+                        <li>
+                            <a href="/python">Python</a>
+                            <img src="{{ url_for('static', filename='images/Python.png') }}">
+                            <p>Discover the highest-level language programming world can offer you</p>
+                        </li>
+                        <li>
+                            <a href="/wb">Web Development</a>
+                            <img src="{{ url_for('static', filename='images/Web.png') }}">
+                            <p>Create Astonishing Websites using front-end and back-end</p>
+                        </li>
+                        <li>
+                            <a href="/ai">Artificial Intelligence</a>
+                            <img src="{{ url_for('static', filename='images/AI.png') }}">
+                            <p>Rule the world and Create your own AI using Machine Learning</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul>
+                   {% if logged %}
+                    <li>Hello,{{name}}</li>
+                    <li style=" margin-left:5%;"><a href="/logout" >Log out</a></li>
+
+                    {% else %}
+                      <li id="reg"><a href="/signin">Sign in</a></li>
+                      <li id="reg1"><a href="/signup" id="reg11">Register</a></li>
+
+
+                    {% endif %}
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="backimage">
+        <div class="texthold">
+            <h1>This course introduces you to the full spectrum of modern web development. Learn how websites are structured, styled, and made interactive — then dive into building dynamic, responsive applications with backend integration and database storage.
+            </h1>
+        </div>
+    </div>
+
+           <div class="modules">
+            <h1>Course Modules</h1>
+            <div class="contentz">
+     <ul><span>🔹 Module 1: Introduction to Web Development</span>
+    <li>What is web development?</li>
+    <li>Frontend vs backend vs full-stack</li>
+    <li>How the web works: servers, clients, and browsers</li>
+    <li>Overview of tools: browsers, editors, and version control</li>
+</ul>
+
+<ul><span>🔹 Module 2: HTML Essentials</span>
+    <li>Basic structure of a webpage</li>
+    <li>Common tags: headings, paragraphs, links, images, lists</li>
+    <li>Forms and input fields</li>
+    <li>Semantic HTML and accessibility</li>
+</ul>
+
+<ul><span>🔹 Module 3: Styling with CSS</span>
+    <li>Inline, internal, and external styles</li>
+    <li>Selectors, properties, and values</li>
+    <li>Flexbox and Grid layouts</li>
+    <li>Responsive design with media queries</li>
+</ul>
+
+<ul><span>🔹 Module 4: JavaScript Basics</span>
+    <li>Variables, data types, and operators</li>
+    <li>Functions and events</li>
+    <li>DOM manipulation</li>
+    <li>Form validation and user interaction</li>
+</ul>
+
+<ul><span>🔹 Module 5: Version Control with Git & GitHub</span>
+    <li>What is version control?</li>
+    <li>Basic Git commands: init, add, commit, push</li>
+    <li>Creating and collaborating on GitHub repositories</li>
+    <li>Using .gitignore and branching</li>
+</ul>
+
+<ul><span>🔹 Module 6: Advanced JavaScript</span>
+    <li>ES6+ features (let, const, arrow functions, template literals)</li>
+    <li>Working with arrays and objects</li>
+    <li>Async JavaScript: callbacks, promises, async/await</li>
+    <li>APIs and fetch requests</li>
+</ul>
+
+<ul><span>🔹 Module 7: Introduction to Frontend Frameworks</span>
+    <li>What are frameworks? Why use them?</li>
+    <li>Getting started with React (JSX, components, props, state)</li>
+    <li>Conditional rendering and lists</li>
+    <li>React hooks (useState, useEffect)</li>
+</ul>
+
+<ul><span>🔹 Module 8: Backend with Node.js & Express</span>
+    <li>Introduction to Node.js</li>
+    <li>Setting up a basic Express server</li>
+    <li>Routing and middleware</li>
+    <li>Handling POST data and form submissions</li>
+</ul>
+
+<ul><span>🔹 Module 9: Databases & CRUD Operations</span>
+    <li>What is a database?</li>
+    <li>Using MongoDB with Mongoose</li>
+    <li>Creating, reading, updating, and deleting records</li>
+    <li>Connecting your backend to the database</li>
+</ul>
+
+<ul><span>🔹 Module 10: Full Project & Deployment</span>
+    <li>Plan and build a full-stack web app</li>
+    <li>Integrate frontend, backend, and database</li>
+    <li>Deploying with Netlify, Vercel, or Render</li>
+    <li>Final walkthrough and best practices</li>
+</ul>
+
+
+            </div>
+        </div>
+
+
+
+
+    <div class="holder">
+        <div class="intro">
+            <img src="{{ url_for('static', filename='images/wb1.png') }}"> 
+            <img src="{{ url_for('static', filename='images/wb2.png') }}">
+            <img src="{{ url_for('static', filename='images/wb3.png') }}">
+            <img src="{{ url_for('static', filename='images/wb4.png') }}">
+        </div>
+    </div>
+
+    <div class="holder2"> 
+        <div class="details">
+            <div class="CTA">
+                <img src="{{ url_for('static', filename='images/price-tag.png') }}">
+                <p>Price: 79.99$</p>
+            </div>
+            <div class="CTA">
+                <img src="{{ url_for('static', filename='images/req.png') }}">
+                <p>Pre-requisites: None</p>
+            </div>
+            <div class="CTA">
+                <img src="{{ url_for('static', filename='images/time-left.png') }}">
+                <p>Course Duration: 10 Weeks</p>
+            </div>
+            <div class="CTA">
+                <img src="{{ url_for('static', filename='images/diploma.png') }}">
+                <p>Full stack developer Diploma</p>
+            </div>
+        </div>   
+{% if logged %}
+<form action="{{ url_for('web') }}" method="post">
+    <button type="submit" class="btn btn-secondary btn-lg"
+        style="position: relative; left:45%; border-radius: 30px; background-color: #2BACB8; color:white;" >
+        Join this course!
+    </button>
+</form>
+{% else %}
+<form action="{{ url_for('signin') }}" method="get">
+    <button type="submit" class="btn btn-secondary btn-lg"
+        style="position: relative; left:45%; border-radius: 30px; background-color: #2BACB8; color:white;">
+        Join this course!
+    </button>
+</form>
+{% endif %}
+
+    
+    </div>  
+
+   
+        <div class="end">
+            <div class="lhs">
+                <ul>
+                    <li style="margin-top:15%;"><img src="{{ url_for('static', filename='images/phone-1.png') }}"><a href="">+44 7700 900123</a></li>
+                    <li><img src="{{ url_for('static', filename='images/map.png') }}"><p style="color:white; font-size:20px;">128 Foxglove Lane, Westfield, London, W12 7RQ, United Kingdom</p></li>
+                    <li><img src="{{ url_for('static', filename='images/Email (2).png') }}"><a href="">Technologeraxx10@gmail.org</a></li>
+                    <li class="social">
+                        <a href=""><img class="fb" src="{{ url_for('static', filename='images/Fb.png') }}"></a>
+                        <a href=""><img class="ig" src="{{ url_for('static', filename='images/instagram.png') }}"></a>
+                        <a href=""><img class="in" src="{{ url_for('static', filename='images/linkedin.png') }}"></a>
+                        <a href=""><img class="x" src="{{ url_for('static', filename='images/x-social-media-black-icon.png') }}"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rhs">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9528.976091090548!2d-1.7006447193220562!3d53.3388878686021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487980a86a8b4bf1%3A0xcd786530b2d286e5!2sHope%20Valley%20S33%200EA%2C%20UK!5e0!3m2!1sen!2seg!4v1754416961194!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="60%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+<!--  -->
+</div>
+
+<script src="{{ url_for('static', filename='wb.js') }}"></script>
+</body>
+</html>
