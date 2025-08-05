@@ -58,7 +58,7 @@ Select "Download ZIP"
 
 Extract the contents
 
-###2. 🐍 Install Dependencies
+### 2. 🐍 Install Dependencies
 Make sure Python 3 is installed. Then run:
 
 bash
@@ -67,7 +67,7 @@ Edit
 pip install -r requirements.txt
 This installs Flask, Flask-Login, Flask-Session, zxcvbn, and more.
 
-###3. 🚦 Run the App
+### 3. 🚦 Run the App
 In your terminal:
 
 Windows:
