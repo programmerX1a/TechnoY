@@ -14,18 +14,16 @@ Technologera replicates basic features of an e-learning platform to demonstrate 
 ## 🚀 Features
 
 - 🔐 **User Authentication**
-  - Registration with password strength feedback
+  - Registration with password strength feedback 
   - Secure login/logout using hashed passwords and sessions
 - 📚 **Course Listings**
   - View list of available courses with titles, instructors, and images
 - 💳 **Join Courses**
-  - Simulated course enrollment with balance deduction
+  - Simulated course enrollment with balance deduction and Good Form formatting for the payment webpage (Luhn's Algorithm also implemented)
 - 📜 **Transaction History**
-  - Table showing enrolled courses and their prices
+  - Table showing enrolled courses and their prices with a Refund System
 - 🔁 **Refund System**
   - Request refunds to return the course price to user balance
-- 🧾 **Basic Admin Controls**
-  - Ability to clear the transaction table (for testing/demo)
 
 ---
 
@@ -36,7 +34,7 @@ Technologera replicates basic features of an e-learning platform to demonstrate 
 - **SQLite** – Lightweight file-based database
 - **Flask-Login** – User session/authentication
 - **Flask-Session** – Server-side sessions
-- **zxcvbn** – Password strength checker
+- **zxcvbn** – Password strength checker and Password Hashing
 - **HTML/CSS/JavaScript** – Frontend
 - **Bootstrap** – UI responsiveness and styling
 
@@ -70,13 +68,10 @@ In your terminal:
 
 Windows:
 
-
-Copy
-Edit
 set FLASK_APP=app.py
 flask run
-macOS/Linux:
 
+macOS/Linux:
 
 export FLASK_APP=app.py
 flask run
