@@ -61,9 +61,7 @@ Extract the contents
 ### 2. 🐍 Install Dependencies
 Make sure Python 3 is installed. Then run:
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 This installs Flask, Flask-Login, Flask-Session, zxcvbn, and more.
 
@@ -80,14 +78,8 @@ flask run
 macOS/Linux:
 
 
-Copy
-Edit
 export FLASK_APP=app.py
 flask run
 Then open the given address, typically:
 
-cpp
-Copy
-Edit
-http://127.0.0.1:5000/
-Hold Ctrl and click or copy-paste into your browser.
+Then just CTRL+LEFT CLICK the port given
