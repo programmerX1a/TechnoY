@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/python.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containerz">
+
+        <div class="navz">
+            <div class="icon">
+               <a href="/"><img src="/static/images/TechnoY.png"></a>
+            </div>
+            <div class="sectionz">
+                <div class="boxz">
+                    <ul>
+                       <li><a href="#">Courses <span>></span></a></li>
+                    </ul>
+                    <div class="card">
+                        <ul>
+                            <li>
+                                <a href="/sw">Solid Works</a> <img src="/static/images/SolidWorks.png">
+                                <p>Learn how to design mechanical/machine parts</p>
+                            </li>
+                            <li>
+                                <a href="/cpp">C++</a> <img src="/static/images/C++.png">
+                                <p>Discover the best language for operating electronic components</p>
+                            </li>
+                            <li>
+                                <a href="/python">Python</a> <img src="/static/images/Python.png">
+                                <p>Discover the highest-level language programming world can offer you</p>
+                            </li>
+                            <li>
+                                <a href="/web">Web Development</a> <img src="/static/images/Web.png">
+                                <p>Create Astonishing Websites using front-end and back-end</p>
+                            </li>
+                            <li>
+                                <a href="/ai">Artificial Intelligence</a> <img src="/static/images/AI.png">
+                                <p>Rule the world and Create your own AI using Machine Learning </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul>
+                        {% if logged %}
+                    <li>Hello,{{name}}</li>
+                    <li><a href="/logout" >Log out</a></li>
+
+                    {% else %}
+                      <li id="reg"><a href="/signin">Sign in</a></li>
+                      <li id="reg1"><a href="/signup" id="reg11">Register</a></li>
+
+
+                    {% endif %}
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="backimage">
+            <div class="texthold">
+                <h1>Jumpstart your coding journey with Python — one of the most beginner-friendly, versatile, and in-demand programming languages in the world. This course walks you through the basics all the way to real-world project building, with a strong focus on clean code and logical thinking.</h1>
+            </div>
+        </div>
+
+        
+
+
+        <div class="modules">
+            <h1>Course Modules</h1>
+            <div class="contentz">
+      <ul><span>🔹 Module 1: Introduction to Python</span>
+    <li>What is Python and why is it so popular?</li>
+    <li>Installing Python and choosing an IDE (VS Code, PyCharm)</li>
+    <li>Running your first Python script</li>
+    <li>Understanding syntax, indentation, and comments</li>
+</ul>
+
+<ul><span>🔹 Module 2: Variables, Data Types & Operators</span>
+    <li>Numbers, strings, booleans</li>
+    <li>Dynamic typing and type conversion</li>
+    <li>Arithmetic, logical, and comparison operators</li>
+    <li>Working with input and output</li>
+</ul>
+
+<ul><span>🔹 Module 3: Control Flow</span>
+    <li>Conditional statements: if, elif, else</li>
+    <li>Loops: for and while</li>
+    <li>Loop control statements: break, continue, pass</li>
+</ul>
+
+<ul><span>🔹 Module 4: Functions</span>
+    <li>Defining and calling functions</li>
+    <li>Arguments, return values, and default parameters</li>
+    <li>Lambda expressions</li>
+    <li>Basic recursion</li>
+</ul>
+
+<ul><span>🔹 Module 5: Data Structures</span>
+    <li>Lists, tuples, sets, and dictionaries</li>
+    <li>List comprehensions</li>
+    <li>Nested structures and iteration</li>
+</ul>
+
+<ul><span>🔹 Module 6: File I/O</span>
+    <li>Reading and writing text files</li>
+    <li>Working with CSV and JSON</li>
+    <li>Error handling with try-except</li>
+</ul>
+
+<ul><span>🔹 Module 7: Object-Oriented Programming</span>
+    <li>Classes and objects</li>
+    <li>Constructors and instance variables</li>
+    <li>Inheritance and method overriding</li>
+    <li>Magic methods and encapsulation</li>
+</ul>
+
+<ul><span>🔹 Module 8: Working with Libraries</span>
+    <li>Using pip to install libraries</li>
+    <li>Popular libraries: math, datetime, random</li>
+    <li>Introduction to NumPy and pandas</li>
+</ul>
+
+<ul><span>🔹 Module 9: Final Project</span>
+    <li>Build a mini-project: e.g., calculator, quiz app, or file organizer</li>
+    <li>Apply all core concepts in a real application</li>
+</ul>
+<ul><span>🔹 Module 10: Intro to Web Development with Python</span>
+    <li>Understanding backend vs frontend</li>
+    <li>Introduction to Flask (Python web framework)</li>
+    <li>Creating basic web routes and templates</li>
+    <li>Handling user input via web forms</li>
+</ul>
+
+            </div>
+        </div>
+
+
+
+        <div class="holder">
+            <div class="intro">
+                <img src="/static/images/pyt.png"> 
+                <img src="/static/images/pyt a.png">
+                <img src="/static/images/pyt b.png">
+                <img src="/static/images/pyt c.png">
+            </div>
+        </div>
+
+        <div class="holder2"> 
+            <div class="details">
+                <div class="CTA">
+                    <img src="/static/images/price-tag.png">
+                    <p>Price: <span style="display:inline-block;" id="prices"></span> </p>
+                </div>
+                <div class="CTA">
+                    <img src="/static/images/req.png">
+                    <p>Pre-requisites: None</p>
+                </div>
+                <div class="CTA">
+                    <img src="/static/images/time-left.png">
+                    <p>Course Duration: 10 Weeks</p>
+                </div>
+                <div class="CTA">
+                    <img src="/static/images/diploma.png">
+                    <p>No diploma for this one</p>
+                </div>
+            </div>   
+       {% if logged %}
+<form action="{{ url_for('python') }}" method="post">
+    <button type="submit" class="btn btn-secondary btn-lg"
+        style="position: relative; left:45%; border-radius: 30px; background-color: #2BACB8; color:white;">
+        Join this course!
+    </button>
+</form>
+{% else %}
+<form action="{{ url_for('signin') }}" method="get">
+    <button type="submit" class="btn btn-secondary btn-lg"
+        style="position: relative; left:45%; border-radius: 30px; background-color: #2BACB8; color:white;">
+        Join this course!
+    </button>
+</form>
+{% endif %}
+
+        </div>  
+
+        <div class="end">
+            <div class="lhs">
+                <ul>
+                    <li style="margin-top:15%;"><img src="/static/images/phone-1.png">
+                        <a href="">+20 1113635588</a>
+                    </li>
+                    <li>
+                        <img src="/static/images/map.png">
+                        <p style="color:white; font-size:20px;">11 Ahmed Basha Tork, Fleming, El Raml 1, Alexandria Governorate 21531</p>
+                    </li>
+                    <li>
+                        <img src="/static/images/Email (2).png">
+                        <a href="">info@technox-ets.org</a>
+                    </li>
+                    <li class="social">
+                        <a href=""><img class="fb" src="/static/images/Fb.png"></a>
+                        <a href=""><img class="ig" src="/static/images/instagram.png"></a>
+                        <a href=""><img class="in" src="/static/images/linkedin.png"></a>
+                        <a href=""><img class="x" src="/static/images/x-social-media-black-icon.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rhs">
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="60%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="/static/Python.js"></script>
+</body>
+</html>

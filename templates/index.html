@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoY</title>
+    <link rel="stylesheet" href="/static/course.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="icon">
+                <a href="/"><img src="/static/images/TechnoY.png"></a>
+            </div>
+            <div class="section">
+                <div class="box">
+                    <ul>
+                        <li id="courses" tableindex="0"><a href="">Courses <span>></span></a></li>
+                    </ul>
+                    <div class="card">
+                        <ul>
+                            <li>
+                                <a href="/sw">Solid Works</a>
+                                <img src="/static/images/SolidWorks.png">
+                                <p>Learn how to design mechanical/machine parts</p>
+                            </li>
+                            <li>
+                                <a href="/cpp">C++</a>
+                                <img src="/static/images/C++.png">
+                                <p>Discover the best language for operating electronic components</p>
+                            </li>
+                            <li>
+                                <a href="/python">Python</a>
+                                <img src="/static/images/Python.png">
+                                <p>Discover the highest-level language programming world can offer you</p>
+                            </li>
+                            <li>
+                                <a href="/web">Web Development</a>
+                                <img src="/static/images/Web.png">
+                                <p>Create Astonishing Websites using front-end and back-end</p>
+                            </li>
+                            <li>
+                                <a href="/ai">Artificial Intelligence</a>
+                                <img src="/static/images/AI.png">
+                                <p>Rule the world and Create your own AI using Machine Learning </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul>
+
+                     {% if logged %}
+                    <li>Hello,{{name}}</li>
+                    <li><a href="/logout" >Log out</a></li>
+
+                    {% else %}
+                      <li id="reg"><a href="/signin">Sign in</a></li>
+                      <li id="reg1"><a href="/signup" id="reg11">Register</a></li>
+
+
+                    {% endif %}
+
+
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="pictures">
+            <h1>Welcome to TechnoY</h1>
+            <p>TechnoX's ripoff :></p>
+        </div>
+
+        <div class="welcome">
+            <div class="half1">
+                <h1>Empower your skills </h1>
+                <p>Take the leap into the world of technology with our comprehensive, tailored course. Whether you're just starting out or looking to advance your skills, we provide everything you need to succeed in one place. With our expert instructors, you'll receive personalized attention, ensuring that every concept is clear and every challenge is overcome.</p>
+                
+                {% if not logged %}
+                <a href="/signup" ><button class="sign">Sign Up!</button></a>
+                {% else %}
+                <a href="/history"><button>Check your Courses!</button></a>
+                {% endif %}
+            </div>
+
+            <div class="half2">
+                <img src="/static/images/Instructor.png">     
+            </div>
+        </div>
+
+        <div class="perks">
+            <div class="perk">
+                <img src="/static/images/certificate-diploma.png">
+                <p>Guaranteed Certificate upon finishing the course</p>
+            </div>
+            <div class="perk">
+                <img src="/static/images/experience-expert-icon.png">
+                <p>Expertised Instructors with over 5+ years of experience in the technology field</p>
+            </div>
+            <div class="perk">
+                <img src="/static/images/friends.png">
+                <p>Friendly enviroment with a place that will make you feel like home</p>
+            </div>
+            <div class="perk">
+                <img src="/static/images/prize.png">
+                <p>Yearly competitions with exquisite prizes for the winners</p>
+            </div>
+        </div>
+
+        <div class="end">
+            <div class="lhs">
+                <ul>
+                    <li style="margin-top:15%;">
+                        <img src="/static/images/phone-1.png">
+                        <a href="">+20 1113635588</a>
+                    </li>
+                    <li>
+                        <img src="/static/images/map.png">
+                        <p style="color:white; font-size:20px;">11 Ahmed Basha Tork, Fleming, El Raml 1, Alexandria Governorate 21531</p>
+                    </li>
+                    <li>
+                        <img src="/static/images/Email (2).png">
+                        <a href="">info@technox-ets.org</a>
+                    </li>
+                    <li class="social">
+                        <a href=""><img class="fb" src="/static/images/Fb.png"></a>
+                        <a href=""><img class="ig" src="/static/images/instagram.png"></a>
+                        <a href=""><img class="in" src="/static/images/linkedin.png"></a>
+                        <a href=""><img class="x" src="/static/images/x-social-media-black-icon.png"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rhs">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.6077950945482!2d29.9613166810763!3d31.231593719091002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c50b4a389261%3A0xd312465190a0e62f!2sTechnoX!5e0!3m2!1sen!2seg!4v1745858765193!5m2!1sen!2seg" width="60%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var enrolled="{{ enrolled | default('',true) }}"
+    if(enrolled==True){
+        window.alert("You are already enrolled in this course")
+    }
+
+
+
+</script>
+</body>
+
+</html>

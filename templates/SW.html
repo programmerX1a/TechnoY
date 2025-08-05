@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='SW.css') }}" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>SolidWorks Course</title>
+</head>
+<body>
+  <div class="containerz">
+    <div class="navz">
+      <div class="icon">
+        <a href="{{ url_for('index') }}">
+          <img src="{{ url_for('static', filename='images/TechnoY.png') }}" />
+        </a>
+      </div>
+      <div class="sectionz">
+        <div class="boxz">
+          <ul>
+            <li><a href="#">Courses <span>></span></a></li>
+          </ul>
+          <div class="card">
+            <ul>
+              <li>
+                <a href="{{ url_for('sw') }}">Solid Works</a>
+                <img src="{{ url_for('static', filename='images/SolidWorks.png') }}" />
+                <p>Learn how to design mechanical/machine parts</p>
+              </li>
+              <li>
+                <a href="{{ url_for('cpp') }}">C++</a>
+                <img src="{{ url_for('static', filename='images/C++.png') }}" />
+                <p>Discover the best language for operating electronic components</p>
+              </li>
+              <li>
+                <a href="{{ url_for('python') }}">Python</a>
+                <img src="{{ url_for('static', filename='images/Python.png') }}" />
+                <p>Discover the highest-level language programming world can offer you</p>
+              </li>
+              <li>
+                <a href="{{ url_for('web') }}">Web Development</a>
+                <img src="{{ url_for('static', filename='images/Web.png') }}" />
+                <p>Create Astonishing Websites using front-end and back-end</p>
+              </li>
+              <li>
+                <a href="{{ url_for('ai') }}">Artificial Intelligence</a>
+                <img src="{{ url_for('static', filename='images/AI.png') }}" />
+                <p>Rule the world and Create your own AI using Machine Learning</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul>
+             {% if logged %}
+                    <li>Hello,{{name}}</li>
+                    <li><a href="/logout" >Log out</a></li>
+
+                    {% else %}
+                      <li id="reg"><a href="/signin">Sign in</a></li>
+                      <li id="reg1"><a href="/signup" id="reg11">Register</a></li>
+
+
+                    {% endif %}
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="backimage">
+   
+        <h1>Welcome to SolidWorks – 3D CAD Design Fundamentals, a comprehensive course designed to introduce students, engineers, and design enthusiasts to one of the most powerful computer-aided design (CAD) tools used in the industry today.     This course will guide you through the essentials of 3D modeling, simulation, and mechanical design using SolidWorks, empowering you to turn your ideas into fully functional digital prototypes. Whether you're aiming to enhance your engineering design skills, prepare for industry certification, or simply explore the world of mechanical CAD, this course provides a strong foundation and hands-on experience.</h1>
+   
+    </div>
+
+    <div class="modules">
+      <h1>Course Modules</h1>
+      <div class="contentz">
+                  <ul><span>🔹 Module 1: Introduction to SolidWorks</span>
+                <li>What is CAD and why use SolidWorks?</li>
+                <li>Installation & user interface overview</li>
+                <li>Understanding the design process (Sketch → Part → Assembly → Drawing)</li>
+               </ul>
+            <ul><span>🔹 Module 2: 2D Sketching Basics</span>
+                <li>Sketch tools: lines, circles, rectangles, arcs</li>
+                <li>Constraints and dimensions</li>
+                <li>Sketch best practices</li>
+                <li>Editing and managing sketches</li>
+            </ul>
+            
+<ul><span>🔹 Module 3: Creating 3D Parts</span>
+    <li>Extrude, Revolve, Sweep, Loft</li>
+    <li>Cut features (Extruded Cut, Revolved Cut)</li>
+    <li>Fillet, Chamfer, Shell, Draft</li>
+    <li>Patterns and mirrors (linear, circular)</li>
+</ul>
+
+<ul><span>🔹 Module 4: Working with Assemblies</span>
+    <li>Understanding parts vs assemblies</li>
+    <li>Mates: standard, advanced, mechanical</li>
+    <li>Assembly constraints and motion</li>
+    <li>Managing sub-assemblies and exploded views</li>
+</ul>
+
+
+<ul><span>🔹 Module 5: Engineering Drawings</span>
+    <li>Creating 2D drawings from 3D parts/assemblies</li>
+    <li>Views: orthographic, isometric, section</li>
+    <li>Adding dimensions, notes, and annotations</li>
+    <li>Title blocks and standards (ISO, ANSI)</li>
+</ul>
+<ul><span>🔹 Module 6: Configurations & Design Tables</span>
+    <li>Creating variations of parts</li>
+    <li>Using design tables in Excel</li>
+    <li>Configuring assemblies for different scenarios</li>
+</ul>
+
+<ul><span>🔹 Module 7: Basic Simulation & Analysis (Optional)</span>
+    <li>Introduction to FEA (Finite Element Analysis)</li>
+    <li>Static stress analysis on parts</li>
+    <li>Interpreting stress and displacement results</li>
+</ul>
+
+<ul><span>🔹 Module 8: Realistic Rendering (Optional)</span>
+    <li>Intro to SolidWorks Visualize or PhotoView 360</li>
+    <li>Applying materials, lighting, and scenes</li>
+    <li>Creating high-quality renders</li>
+</ul>
+
+<ul><span>🔹 Module 9: Project-Based Learning</span>
+    <li>Design a mechanical part (e.g., a phone stand, bracket, or hinge)</li>
+    <li>Assemble multiple parts (e.g., a simple gearbox)</li>
+    <li>Create complete drawings and presentation renderings</li>
+</ul>
+
+<ul><span>🔹 Final Assessment</span>
+    <li>Mini design challenge</li>
+    <li>Portfolio submission (optional for certification)</li>
+</ul>
+
+
+      </div>
+    </div>
+
+    <div class="holder">
+      <div class="intro">
+        <img src="{{ url_for('static', filename='images/SW1.png') }}" />
+        <img src="{{ url_for('static', filename='images/SW2.png') }}" />
+        <img src="{{ url_for('static', filename='images/SW3.png') }}" />
+        <img src="{{ url_for('static', filename='images/SW4.png') }}" />
+      </div>
+    </div>
+
+    <div class="holder2">
+      <div class="details">
+        <div class="CTA">
+          <img src="{{ url_for('static', filename='images/price-tag.png') }}" />
+          <p>Price: <span id="prices"></span></p>
+        </div>
+        <div class="CTA">
+          <img src="{{ url_for('static', filename='images/req.png') }}" />
+          <p>Pre-requisites: None</p>
+        </div>
+        <div class="CTA">
+          <img src="{{ url_for('static', filename='images/time-left.png') }}" />
+          <p>Course Duration: 10 Weeks</p>
+        </div>
+        <div class="CTA">
+          <img src="{{ url_for('static', filename='images/diploma.png') }}" />
+          <p>SolidWorks Diploma upon Completion</p>
+        </div>
+      </div>
+      {% if logged %}
+<form action="/sw" method="post">
+    <button type="submit" class="btn btn-secondary btn-lg"
+        style="position: relative; left:45%; border-radius: 30px; background-color: #2BACB8; color:white;">
+        Join this course!
+    </button>
+</form>
+{% else %}
+<form action="/signin" method="get">
+    <button type="submit" class="btn btn-secondary btn-lg"
+        style="position: relative; left:45%; border-radius: 30px; background-color: #2BACB8; color:white;">
+        Join this course!
+    </button>
+</form>
+{% endif %}
+
+    </div>
+
+    <div class="end">
+      <div class="lhs">
+        <ul>
+          <li style="margin-top:15%;">
+            <img src="{{ url_for('static', filename='images/phone-1.png') }}" />
+            <a href="">+20 1113635588</a>
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='images/map.png') }}" />
+            <p style="color:white; font-size:20px;">11 Ahmed Basha Tork, Fleming, El Raml 1, Alexandria Governorate 21531</p>
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='images/Email (2).png') }}" />
+            <a href="">info@technox-ets.org</a>
+          </li>
+          <li class="social">
+            <a href=""><img class="fb" src="{{ url_for('static', filename='images/Fb.png') }}" /></a>
+            <a href=""><img class="ig" src="{{ url_for('static', filename='images/instagram.png') }}" /></a>
+            <a href=""><img class="in" src="{{ url_for('static', filename='images/linkedin.png') }}" /></a>
+            <a href=""><img class="x" src="{{ url_for('static', filename='images/x-social-media-black-icon.png') }}" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="rhs">
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="60%" height="60%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='SW.js') }}"></script>
+</body>
+</html>
