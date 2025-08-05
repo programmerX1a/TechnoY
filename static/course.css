@@ -1,0 +1,377 @@
+
+
+ body{
+    margin:0;
+    background-color: #C2C6CA;
+ }
+.container{
+    width:100%;
+    height:100vh;
+   
+ 
+}
+
+.container .nav{
+    width:100%;
+    height:10%;
+    margin:auto;
+    background-color: #E9ECEF;
+    display:flex;
+
+}
+.container .nav .icon img{
+    width:180px;
+    height:100%;
+}
+.container .nav .icon{
+    width:15%;
+    height:auto;
+    
+}
+
+
+.container .nav .section{
+    height:100%;
+    width:75%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    
+
+}
+.container .nav .section ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:20%;
+
+    
+   
+    
+    
+}
+.containerz .navz .sectionz .boxz ul{
+    width:100%;
+}
+
+.container .nav .section .card ul{
+    width:100%;
+}
+.container .nav .section ul li{
+   
+   font-size: 20px;
+   padding-right:10%;
+   
+   
+}
+.container .nav .section ul li a{
+    text-decoration: none;
+    color:rgb(7, 7, 7);
+
+}
+.container .nav .section ul li a:hover{
+    color:rgb(78, 71, 71);
+}
+.container .nav .section .box{
+    position:relative;
+    width:auto;
+   
+   
+}
+.container .nav .section ul li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    display: inline-flex;      
+    align-items: center;         
+    gap: 5px;                    
+}
+
+.container .nav .section .box .card{
+    display:none;   
+    position: absolute;
+    z-index: 1;
+    width: 380px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.container .nav .section .box:hover .card{
+    display:block; 
+    width:380px;
+    height:600px;
+    background-color: white;
+}
+.container .nav .section .box .card ul li a:hover{
+    color:#9c1015;
+}
+.container .nav .section .box:hover {
+    overflow:visible;
+   
+    
+  
+}
+.container .nav .section .box:hover ul li a span{
+    display:inline-block;  /*I had to check the internet for this one because it didnt rotate also set it to inline block to be able to rotate like a block and not start a new line like an inline*/
+    transform:rotate(90deg);
+    
+}
+
+.container .nav .section .box .card ul{
+    display:flex;
+    flex-direction: column;
+}
+.container .nav .section .box .card ul li img{
+    width:50px;
+    height:50px;
+    position:relative;
+    top:10px;
+   
+}
+
+.container .nav .section .box .card ul li p{
+    font-size: 14px;
+    border-bottom:1px solid grey;
+   
+}
+.container .nav .section .box .card ul li a{
+    color:#F2888C;
+}
+.container .welcome{
+ 
+    width:90%;
+    height:90vh;
+    margin-left: 10%;
+    display: flex;
+
+    flex-direction: row;
+}
+.container .welcome .half1 h1{
+    text-align: left;
+    font-size:75px;
+  
+}
+.container .welcome .half2{
+    width:auto;
+}
+.container .welcome .half1{
+    width:40%;
+}
+.container .welcome .half2 img{
+    
+    width:85%;
+    height:60%;
+    position:relative;
+    top:8%;
+    left:25%;
+    box-shadow: 0px 0px 30px rgb(7, 7, 7);
+    
+    
+}
+.container .welcome .half1 p{ 
+    font-size:20px;
+    line-height: 1.5;
+    width:400px;
+}
+.container .welcome .half1 button{
+    color:white;
+    background-color:#2BACB8;
+    border:none;
+    border-radius: 20px;
+    width:175px;
+    height:75px;
+}
+.container .welcome .half1 button:hover{
+    background-color: white;
+    color:rgb(78, 71, 71);
+}
+.container .welcome .half1 button.sign:hover{
+    background-color: white;
+    color:rgb(78, 71, 71);
+}
+.container .welcome .half1 button.sign{
+    background-color: #84898d;
+    margin-left:30px;
+
+}
+
+ .container .perks{
+    width:100%;
+    background-color: white;
+    display:flex;
+    flex-flow:nowrap row;
+    justify-content: space-around;
+    height:50vh;
+}
+.container .perks .perk{
+    width:20%;
+  
+    display:flex;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    flex-flow:nowrap column;
+}
+.container .perks .perk img{
+    width:80px;
+    height:80px;
+   
+    
+   
+}
+.container .perks .perk p{
+    font-size:22px;
+    text-align:center;
+
+}
+
+.container .pictures{
+    width:100%;
+    height:60vh;
+    background-color: antiquewhite;
+    background-image: url(images/coding.jpg);
+    background-size: cover;
+ 
+    background-position: center center;
+  
+}
+.container .pictures h1{
+    color:white;
+    font-size:35px;
+    margin:0;
+    text-align: center;
+    position:relative;
+    top:25%;
+   
+   
+}
+.container .pictures p{
+    color:white;
+    font-size:20px;
+    text-align:center;
+    position:relative;
+    top:25%;
+}
+
+.container .end{
+    width:100%;
+    height:90vh;
+    background-color: rgb(43, 43, 70);
+    display:flex;
+   
+}
+.container .end iframe{
+    position:relative;
+    top:10%;
+    left:35%;
+}
+
+.container .end img{
+    width:45px;
+    height:45px;
+}
+.container .end ul{
+    
+    list-style: none;
+}
+
+.container .end ul li{
+    display: flex;
+    margin-top:5%;
+    border-bottom: 1px solid grey;
+    
+
+}
+.container .end .lhs{
+    width: 50%;
+}
+.container .end .rhs{
+    width:50%;
+}
+.container .end ul li a{
+    font-size:20px;
+    margin:2% 1%;
+   
+    text-decoration: none;
+     color:white;
+}
+.container .end ul li.social{
+    display:flex;
+    width:40%;
+    justify-content: space-between;
+    border:none;
+
+}
+
+.container .end ul li a:hover{
+    color:#84898d;
+ 
+}
+
+
+@media screen and (max-width: 768px) {
+   
+  .container .nav {
+    flex-direction: column !important;
+    height: auto !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container .nav .section {
+    flex-direction: column !important;
+    align-items: center;
+    width: 100% !important;
+    margin-top: 10px;
+  }
+
+  .container .nav .section ul {
+    flex-direction: column !important;
+    gap: 10px;
+    width:auto;
+    
+  }
+  .container .nav .section .box{
+    text-align: center;
+  }
+
+  .container .nav .icon img {
+    width: 120px !important;
+  }
+
+  .container .welcome {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    height: auto !important;
+   
+  }
+
+  .container .welcome .half1,
+  .container .welcome .half2 {
+    width: 100% !important;
+    margin:0;
+    
+
+  }
+  .container .welcome .half1 p{
+    margin-left:10%;
+  }
+
+  .container .welcome .half2 img {
+    left: -5% !important;
+    width: 90% !important;
+  }
+
+  .container .perks {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .container .perks .perk {
+    width: 90% !important;
+    margin-bottom: 20px;
+  }
+ 
+}

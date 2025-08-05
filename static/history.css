@@ -1,0 +1,177 @@
+
+.containerz{
+    width:100%;
+    height:100vh;
+    margin:0;
+   
+    
+
+}
+.containerz .navz{
+    width:100%;
+    height:10%;
+    margin:auto;
+    background-color: #E9ECEF;
+    display:flex;
+  
+
+}
+.containerz .navz .icon img{
+    width:180px;
+    height:100%;
+}
+.containerz .navz .icon{
+    width:15%;
+    height:auto;
+    
+}
+
+
+.containerz .navz .sectionz{
+    height:100%;
+    width:75%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1.75%;
+    
+
+}
+.containerz .navz .sectionz ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:20%;
+    
+}
+
+.containerz .navz .sectionz .boxz ul{
+    width:100%;
+}
+
+.containerz .navz .sectionz ul li{
+   
+   font-size: 18px;
+   font-weight: 500;
+
+}
+.containerz .navz .sectionz ul li a{
+    text-decoration: none;
+    color:rgb(7, 7, 7);
+
+}
+.containerz .navz .sectionz ul li a:hover{
+    color:rgb(78, 71, 71);
+}
+.containerz .navz .sectionz  .boxz{
+    position:relative;
+    width:auto;
+   
+}
+
+.containerz .navz .sectionz .boxz .card{
+   display:none;
+    
+}
+
+.containerz .navz .sectionz .boxz:hover .card{  
+    display:block;
+    width:380px;
+    height:600px;
+    z-index: 1;
+    background-color: white;
+}
+.containerz .navz .sectionz .boxz .card ul li a:hover{
+    color:#9c1015;
+}
+.containerz .navz .sectionz .boxz:hover {
+    overflow:visible;
+   
+    
+  
+}
+.containerz .navz .sectionz .boxz:hover ul li a span{
+    display:inline-block;  /*I had to check the internet for this one because it didnt rotate also set it to inline block to be able to rotate like a block and not start a new line like an inline*/
+    transform:rotate(90deg);
+    
+}
+
+.containerz .navz .sectionz .boxz .card ul{
+    display:flex;
+    flex-direction: column;
+}
+.containerz .navz .sectionz .boxz .card ul li img{
+    width:50px;
+    height:50px;
+    position:relative;
+    top:3px;
+
+   
+}
+
+.containerz .navz .sectionz .boxz .card ul li p{
+    font-size: 14px;
+    border-bottom:1px solid grey;
+   
+}
+.containerz .navz .sectionz .boxz .card ul li a{
+    color:#F2888C;
+}
+
+
+.containerz table{
+    width:90% !important;
+    margin:auto !important;
+    margin-top:2.5% !important;
+
+}
+
+.containerz table,th,td{
+    border:2px solid black !important;
+    border-collapse: collapse !important;
+
+}
+
+.containerz table tr{
+    margin-right:20% !important;
+  
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .containerz .navz {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .containerz .navz .icon {
+    width: 100%;
+    text-align: center;
+  }
+
+  .containerz .navz .icon img {
+    width: 140px;
+  }
+
+  .containerz .navz .sectionz {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .containerz .navz .sectionz ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .containerz .navz .sectionz ul li {
+    font-size: 20px;
+  }
+}
+
+.containerz h1{
+    font-size:25px;
+}
