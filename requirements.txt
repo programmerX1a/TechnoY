@@ -2,5 +2,5 @@ Flask
 zxcvbn
 Werkzeug
 Flask-Session
-flask
 Flask-Login
+
